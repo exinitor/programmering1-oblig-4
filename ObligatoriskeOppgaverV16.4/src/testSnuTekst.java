@@ -8,6 +8,7 @@ public class testSnuTekst {
 		String tekst = input.nextLine();
 		
 		System.out.print("\nTeksten baklengs er: " );
-		SnuTekst.baklengs(tekst, 1);
+		SnuTekst.baklengs(tekst);
+		System.out.print("\nAntall endringer: " + SnuTekst.antallForandringer);	
 	}
 }
