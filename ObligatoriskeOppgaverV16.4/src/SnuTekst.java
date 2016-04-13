@@ -17,11 +17,13 @@ public class SnuTekst {
 	
 	}
 	public static void baklengs(String tekst, int siste) {	
-		if(tekst.length() > 1)
+		if (tekst.charAt(tekst.length()-1) == ' ')
+			baklengs(tekst.substring(0,tekst.length()-1), antallForandringer);
+		
+		else
 		{
 				baklengs(tekst.substring(0,tekst.length()-1));
 				antallForandringer++;
 		}
-		
 	}
 }
