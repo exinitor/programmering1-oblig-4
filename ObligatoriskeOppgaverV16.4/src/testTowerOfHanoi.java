@@ -9,5 +9,6 @@ public class testTowerOfHanoi {
 		towerOfHanoi test1 = new towerOfHanoi();
 		test1.moveDisks(n, 'A', 'B', 'C');
 		System.out.println("Trekkene er: " + test1.antallTrekk);
+		System.out.println("Antall kall er: " + test1.antallKall);
 		}	
 	}
